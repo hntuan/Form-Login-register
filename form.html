@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Login</title>
+
+    <link rel="icon" href="./img/icon/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+</head>
+<body>
+    <div class="form">
+        <div class="form_box">
+            <div class="button_box">
+                <div id="btn"></div>
+                <button type="button" class="button_box-btn" onclick="login()">LogIn</button>
+                <button type="button" class="button_box-btn" onclick="register()">Register</button>
+            </div>
+            <div class="form_social-icons">
+                <img src="./img/fb.png" alt="facebook">
+                <img src="./img/tw.png" alt="twitter">
+                <img src="./img/gp.png" alt="google">
+            </div>
+            <form id="login" class="form_group">
+                <div class="form_group-content">
+                    <input type="email" class="form_group_input" placeholder="Enter Email" id="check-email">
+                    <label class="err err-email-block"><i class="far fa-times-circle"></i></label>
+                    <label class="success success-email-block"><i class="far fa-check-circle"></i></label>
+                    <label class="err_val" data-err="check-email"></label>
+                </div>
+                <div class="form_group-content">
+                    <input type="password" class="form_group_input" placeholder="Enter Password" id="check-pass">
+                    <label class="err err-pass-block"><i class="far fa-times-circle"></i></label>
+                    <label class="success success-pass-block"><i class="far fa-check-circle"></i></label>
+                    <label class="err_val" data-err="check-pass"></label>
+                </div>
+                <input type="checkbox" class="form_group_checkbox"><span>Remember Password?</span>
+                <input type="button" class="form_group_btn" value="LOGIN">
+            </form>
+
+            <form id="register" class="form_group">
+                <div class="form_group-content">
+                    <input type="text" name="names" class="form_group_input" placeholder="Enter Name" id="check-err-name">
+                    <label class="err err-name-block"><i class="far fa-times-circle"></i></label>
+                    <label class="success success-name-block"><i class="far fa-check-circle"></i></label>
+                    <label class="err_val" data-err="check-err-name"></label>
+                </div>
+                <div class="form_group-content">
+                    <input type="email" name="email" class="form_group_input" placeholder="Enter Email" id="check-err-email">
+                    <label class="err err-email-block"><i class="far fa-times-circle"></i></label>
+                    <label class="success success-email-block"><i class="far fa-check-circle"></i></label>
+                    <label class="err_val" data-err="check-err-email"></label>
+                </div>
+                <div class="form_group-content">
+                    <input type="password" name="password" class="form_group_input" placeholder="Enter Password" id="check-err-pass">
+                    <label class="err err-pass-block"><i class="far fa-times-circle"></i></label>
+                    <label class="success success-pass-block"><i class="far fa-check-circle"></i></label>
+                    <label class="err_val" data-err="check-err-pass"></label>
+                </div>
+                <div class="form_group-content">
+                    <input type="password" name="enterpassword" class="form_group_input" placeholder="Import Password" id="check-err-enterpass"> 
+                    <label class="err err-enterpass-block"><i class="far fa-times-circle"></i></label>
+                    <label class="success success-enterpass-block"><i class="far fa-check-circle"></i></label>
+                    <label class="err_val" data-err="check-err-enterpass"></label>
+                </div>
+                <input type="checkbox" class="form_group_checkbox"><span>I agree to the terms & conditions</span>
+                <input type="button" class="form_group_btn" value="REGISTER">
+            </form>
+        </div>
+        
+    </div>
+    <script>
+        var x = document.getElementById('login');
+        var y = document.getElementById('register');
+        var z = document.getElementById('btn');
+
+        function register(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+
+        function login(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+    </script>
+
+    <script src="./js/formLogin.js"></script>
+    <script src="./js/formRegister.js"></script>
+
+</body>
+</html>

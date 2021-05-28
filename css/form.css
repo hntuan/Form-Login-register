@@ -1,0 +1,157 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    /* font-family: sans-serif; */
+}
+
+.form{
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/banner.jpg");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.form_box{
+    width: 380px;
+    height: 75vh;
+    position: relative;
+    margin: 6% auto;
+    background-color: rgb(255, 252, 252);
+    padding: 5px;
+    overflow: hidden;
+    opacity: 0.9;
+    border-radius: 20px;
+}
+
+.button_box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+
+.button_box-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border-radius: 30px;
+    transition: 0.5s;
+
+}
+
+.form_social-icons{
+    margin: 30px auto;
+    text-align: center;
+}
+
+.form_social-icons img{
+    width: 30px;
+    margin: 0 12px;
+    box-shadow: 0 0 20px 0 #7f7f7f3d;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.form_group{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: 0.5s;
+
+}
+
+.form_group-content{
+    position: relative;
+}
+
+.err{
+    display: none;
+    color: red;
+    position: absolute;
+    top: 17px;
+    right: 10px;
+}
+
+.success-enterpass-block,
+.err-enterpass-block,
+.success-name-block,
+.err-name-block,
+.success-pass-block,
+.err-pass-block,
+.success-email-block,
+.err-email-block{
+    display: none;
+}
+
+.success{
+    display: none;
+    color: rgb(25, 181, 25);
+    position: absolute;
+    top: 17px;
+    right: 10px;
+}
+.err_val{
+    margin-left: 5px;
+    font-size: 14px;
+    color: red;
+}
+.form_group_input{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.form_group_btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+
+}
+
+.form_group_checkbox{
+    margin: 30px 10px 30px 0;
+
+}
+
+.form_group span{
+    color: #777;
+    font-size: 12px;
+    bottom: 69px;
+    position: absolute;
+}
+
+#login{
+    left: 50px;
+}
+
+#register{
+    left: 450px;
+}
